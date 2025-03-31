@@ -3,9 +3,9 @@ import React from 'react';
 import { Code, MonitorSmartphone, UserCheck, Sparkles, BookOpen, Zap, ArrowUpDown, Clock } from 'lucide-react';
 
 const Feature = ({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) => (
-  <div className="flex gap-4 p-6 rounded-xl glass-card">
+  <div className="flex gap-4 p-6 rounded-xl glass-card feature-card">
     <div className="mt-1 shrink-0">
-      <div className="w-12 h-12 rounded-lg bg-gradient-green flex items-center justify-center text-invis-bg">
+      <div className="w-12 h-12 rounded-lg bg-gradient-green flex items-center justify-center text-invis-bg feature-icon transition-all duration-300">
         {icon}
       </div>
     </div>

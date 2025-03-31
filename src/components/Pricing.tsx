@@ -20,7 +20,7 @@ const PricingCard = ({
   features: string[],
   popular?: boolean
 }) => (
-  <div className={`rounded-xl p-1 ${popular ? 'bg-gradient-green' : 'bg-gray-800'}`}>
+  <div className={`rounded-xl p-1 ${popular ? 'bg-gradient-green' : 'bg-gray-800'} animate-fade-in`}>
     <div className="h-full bg-invis-bg-light rounded-lg p-6 flex flex-col">
       {popular && (
         <div className="text-xs font-semibold text-invis bg-invis/10 py-1 px-3 rounded-full self-start mb-4">
@@ -44,7 +44,7 @@ const PricingCard = ({
           </li>
         ))}
       </ul>
-      <Button className={`w-full ${popular ? 'bg-gradient-green hover:opacity-90' : 'bg-invis-bg border border-invis hover:bg-invis hover:text-invis-bg'}`}>
+      <Button className={`w-full ${popular ? 'bg-invis hover:bg-invis/90 text-invis-bg' : 'bg-invis hover:bg-invis/90 text-invis-bg'}`}>
         Get Started
       </Button>
     </div>

@@ -14,9 +14,13 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <Hero />
-      <Features />
-      <div className="py-16 bg-invis-bg-light">
+      <div className="animate-fade-in">
+        <Hero />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <Features />
+      </div>
+      <div className="py-16 bg-invis-bg-light animate-fade-in" style={{ animationDelay: '0.3s' }}>
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
             See <span className="text-gradient">Invis</span> in Action
@@ -24,10 +28,18 @@ const Index = () => {
           <AppDemo />
         </div>
       </div>
-      <HowItWorks />
-      <Pricing />
-      <Shortcuts />
-      <Footer />
+      <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <HowItWorks />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '0.5s' }}>
+        <Pricing />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <Shortcuts />
+      </div>
+      <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>
+        <Footer />
+      </div>
       
       {/* Uncomment to show the Auth modal */}
       {/* <Auth /> */}

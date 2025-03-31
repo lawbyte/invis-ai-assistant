@@ -2,7 +2,7 @@
 import React from 'react';
 
 interface KeyProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   highlight?: boolean;
   size?: 'normal' | 'wide' | 'space';
   className?: string;
@@ -112,7 +112,7 @@ const KeyboardVisual = () => {
           <Key size="wide" highlight={true}>Ctrl</Key>
           <Key>⊞</Key>
           <Key size="wide" highlight={true}>Alt</Key>
-          <Key size="space"></Key>
+          <Key size="space">Space</Key>
           <Key size="wide" highlight={true}>Alt</Key>
           <Key>≡</Key>
         </div>

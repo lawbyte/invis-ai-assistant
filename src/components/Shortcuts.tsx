@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Keyboard } from 'lucide-react';
+import KeyboardVisual from './KeyboardVisual';
 
 const ShortcutCard = ({ shortcut, description, icon }: { shortcut: string, description: string, icon?: React.ReactNode }) => (
   <div className="flex gap-4 items-center p-4 rounded-lg bg-invis-bg-light">
@@ -37,10 +38,14 @@ const Shortcuts = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-16">
           {shortcuts.map((shortcut, index) => (
             <ShortcutCard key={index} {...shortcut} />
           ))}
+        </div>
+        
+        <div className="mt-12 mb-16 animate-fade-in">
+          <KeyboardVisual />
         </div>
         
         <div className="mt-16 text-center">
